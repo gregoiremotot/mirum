@@ -4,10 +4,11 @@
 <title>Page Title</title>
   <script>
      window.onload = function () {
-        window.location = 'mypronos://home';
-        setTimeout(function (){
-            window.location = 'mypronos://home'
-        }, 1000);
+       
+        var a = document.createElement('a');
+a.setAttribute('href','mypronos://home'); 
+document.body.appendChild(a);
+a.click();
     }
 </script>
 </head>
