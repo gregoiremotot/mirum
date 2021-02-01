@@ -5,10 +5,9 @@
   <script>
      window.onload = function () {
        
-        var a = document.createElement('a');
-a.setAttribute('href','mypronos://home'); 
-document.body.appendChild(a);
-a.click();
+        if(confirm("Open the app?")) {
+        window.location = 'mypronos://home';
+}
     }
 </script>
 </head>
